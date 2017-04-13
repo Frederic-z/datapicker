@@ -5,7 +5,7 @@
 
     var ret = [];
 
-    if (!year || !month) {
+    if (typeof year === 'undefined') {
       var today = new Date();
       year = today.getFullYear();
       month = today.getMonth() + 1;
